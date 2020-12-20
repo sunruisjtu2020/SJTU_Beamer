@@ -1,0 +1,147 @@
+\documentclass[UTF8, aspectratio = 169, fontsize = 12, hyperref]{ctexbeamer}
+\usetheme{Dresden}
+\usecolortheme{beaver}
+\usepackage{graphicx}
+\usepackage{wallpaper}
+\usepackage{ulem}
+\usepackage{amsmath}
+\usepackage[mathrm=sym]{unicode-math}
+\setmathfont{Fira Math}
+\logo{\includegraphics[height=0.07\textwidth]{sjtu-red.png}}
+\setbeamertemplate{background}{\includegraphics[width=\paperwidth]{sjtu-miao.png}}
+\title{积分表}
+\author{Sun Rui}
+\date{\today}
+\begin{document}
+    \section{标题页}
+    \frame{\maketitle}
+    \section{有理函数积分表}
+    \begin{frame}
+        \frametitle{有理函数积分表}
+        \begin{itemize}
+            \item $\int{k}\mathrm{d}x=kx+C$
+            \item $\int{x^{\alpha}}\mathrm{d}x=\frac{x^{\alpha+1}}{\alpha+1}+C (\alpha \ne 1)$
+            \item $\int{\frac{\mathrm{d}x}{x}}=\ln{|x|}+C$
+            \item $\int{\frac{\mathrm{d}x}{x^2+a^2}}=\frac{1}{a}\arctan{\frac{x}{a}}+C (a \ne 0)$
+            \item $\int{\frac{\mathrm{d}x}{x^2-a^2}}=\frac{1}{2a}\ln{|\frac{x-a}{x+a}|}+C$
+        \end{itemize}
+    \end{frame}
+    \begin{frame}
+        \frametitle{有理函数积分表}
+        \begin{itemize}
+            \item $\int{(ax+b)^n}\mathrm{d}x=\frac{(ax+b)^{n+1}}{a(n+1)}+C$
+            \item $\int{\frac{1}{ax+b}}\mathrm{d}x=\frac{1}{a}\ln{|ax+b|}+C$
+            \item $\int{x(ax+b)^n}\mathrm{d}x=\frac{a(n+1)x-b}{a^2(n+1)(n+2)}(ax+b)^{n+1}+C$
+            \item $\int{\frac{x}{ax+b}}\mathrm{d}x=\frac{x}{a}-\frac{b}{a^2}\ln{|ax+b|}+C$
+            \item $\int{\frac{x}{(ax+b)^2}}\mathrm{d}x=\frac{b}{a^2(ax+b)}+\frac{1}{a^2}\ln{|ax+b|}+C$
+        \end{itemize}
+    \end{frame}
+    \begin{frame}
+        \frametitle{有理函数积分表}
+        \begin{itemize}
+            \item $\int{\frac{x}{(ax+b)^n}}\mathrm{d}x=\frac{a(1-n)x-b}{a^2(n-1)(n-2)(ax+b)^{n-1}}+C (n \notin \{1,2\})$
+            \item $\int{\frac{x^2}{ax+b}}\mathrm{d}x=\frac{1}{a^3}[\frac{(ax+b)^2}{2}-2b(ax+b)+b^2\ln{|ax+b|}]+C$
+            \item $\int{\frac{x^2}{(ax+b)^2}}\mathrm{d}x=\frac{1}{a^3}(ax+b-2b\ln{|ax+b|}-\frac{b^2}{ax+b})+C$
+            \item $\int{\frac{x^2}{(ax+b)^3}}\mathrm{d}x=\frac{1}{a^3}[\ln{|ax+b|}+\frac{2b}{ax+b}-\frac{b^2}{2(ax+b)^2}]+C$
+            \item $\int{\frac{x^2}{(ax+b)^n}}\mathrm{d}x=\frac{1}{a^3}[-\frac{1}{(n-3)(ax+b)^{n-3}}+\frac{2b}{(n-2)(ax+b)^{n-2}}-\frac{b^2}{(n-1)(ax+b)^{n-1}}]+C (n \notin \{1,2,3\})$
+        \end{itemize}
+    \end{frame}
+    \section{无理函数积分表}
+    \begin{frame}
+        \frametitle{无理函数积分表}
+        \begin{itemize}
+            \item $\int{\frac{\mathrm{d}x}{\sqrt{a^2-x^2}}}=\arcsin{\frac{x}{a}}+C$
+            \item $\int{\frac{\mathrm{d}x}{\sqrt{x^2-a^2}}}=\ln{|\frac{x+\sqrt{x^2-a^2}}{a}|}+C$
+            \item $\int{\frac{\mathrm{d}x}{\sqrt{x^2+a^2}}}=\ln{|x+\sqrt{x^2+a^2}|}+C$
+            \item $\int{\frac{\mathrm{d}x}{x\sqrt{ax+b}}}=-\frac{2}{\sqrt{b}}\tanh^{-1}{\sqrt\frac{ax+b}{b}}+C$
+            \item $\int{\frac{\sqrt{ax+b}}{x}}\mathrm{d}x=2(\sqrt{ax+b}-\sqrt{b}\tanh^{-1}\sqrt{\frac{ax+b}{b}})+C$
+        \end{itemize}
+    \end{frame}
+    \section{指数函数积分表}
+    \begin{frame}
+        \frametitle{指数函数积分表}
+        \begin{itemize}
+            \item $\int{e^{cx}}\mathrm{d}x=\frac{e^{cx}}{c}+C$
+            \item $\int{a^{cx}}\mathrm{d}x=\frac{a^{cx}}{c\ln{a}}+C$
+            \item $\int{xe^{cx}}\mathrm{d}x=\frac{e^{cx}(cx-1)}{c^2}+C$
+            \item $\int{x^2e^{cx}}\mathrm{d}x=e^{cx}(\frac{x^2}{c}-\frac{2x}{c^2}+\frac{2}{c^3})+C$
+        \end{itemize}
+    \end{frame}
+    \section{对数函数积分表}
+    \begin{frame}
+        \frametitle{对数函数积分表}
+        \begin{itemize}
+            \item $\int{\ln{x}}\mathrm{d}x=x\ln{x}-x+C$
+            \item $\int{\ln^2{x}}\mathrm{d}x=x\ln^2{x}-2x\ln{x}+2x+C$
+            \item $\int{\frac{\mathrm{x}}{x\ln{x}}}=\ln{|\ln{x}|}+C$
+            \item $\int{\sin{\ln{x}}}\mathrm{d}x=\frac{x(\sin{\ln{x}}-\cos{\ln{x}})}{2}+C$
+            \item $\int{\cos{\ln{x}}}\mathrm{d}x=\frac{x(\sin{\ln{x}}+\cos{\ln{x}})}{2}+C$
+        \end{itemize}
+    \end{frame}
+    \section{三角函数积分表}
+    \begin{frame}
+        \frametitle{三角函数积分表}
+        \begin{itemize}
+            \item $\int{\sin{x}}\mathrm{d}x=\cos{x}+C$
+            \item $\int{\cos{x}}\mathrm{d}x=-\sin{x}+C$
+            \item $\int{x\sin{cx}}\mathrm{d}x=\frac{\sin{cx}}{c^2}-\frac{x\cos{cx}}{c}+C$
+            \item $\int{x\cos{cx}}\mathrm{d}x=\frac{\cos{cx}}{c^2}+\frac{x\sin{cx}}{c}+C$
+            \item $\int{\tan{x}}\mathrm{d}x=-\frac{\ln{|cos{cx}|}}{c}+C=\frac{\ln{|\sec{cx}|}}{c}+C$
+        \end{itemize}
+    \end{frame}
+    \begin{frame}
+        \frametitle{三角函数积分表}
+        \begin{itemize}
+            \item $\int{\sec{x}}\mathrm{d}x=\ln{|\sec{x}+\tan{x}|}+C$
+            \item $\int{\csc{x}}\mathrm{d}x=\ln{|\csc{x}-\cot{x}|}+C$
+            \item $\int{\sec^2{x}}\mathrm{d}x=\tan{x}+C$
+            \item $\int{\csc^2{x}}\mathrm{d}x=-\cot{x}+C$
+            \item $\int{\sec{x}\tan{x}}\mathrm{d}x=\sec{x}+C$
+            \item $\int{\csc{x}\cot{x}}\mathrm{d}x=-\csc{x}+C$
+        \end{itemize}
+    \end{frame}
+    \section{反三角函数积分表}
+    \begin{frame}
+        \frametitle{反三角函数积分表}
+        \begin{itemize}
+            \item $\int{\arcsin{\frac{x}{c}}}\mathrm{d}x=x\arcsin{\frac{x}{c}}+\sqrt{c^2-x^2}+C$
+            \item $\int{x\arcsin{\frac{x}{c}}\mathrm{d}x=(\frac{x^2}{2}-\frac{c^2}{4})\arcsin{\frac{x}{c}}}+\frac{x}{4}\sqrt{c^2-x^2}+C$
+            \item $\int{x^2\arcsin{\frac{x}{c}}}\mathrm{d}x=\frac{x^3}{3}\arcsin{x}{c}+\frac{x^2+2c^2}{9}\sqrt{c^2-x^2}+C$
+            \item $\int{\arctan{\frac{x}{c}}}\mathrm{d}x=x\arctan{x}-\frac{c}{2}\ln(c^2x^2+1)+C$
+            \item $\int{x\arctan{\frac{x}{c}}}\mathrm{d}x=\frac{c^2+x^2}{2}\arctan{x}{c}-\frac{cx^2}{6}+\frac{c^3}{6}\ln{c^2}+x^2+C$
+        \end{itemize}
+    \end{frame}
+    \section{双曲函数积分表}
+    \begin{frame}
+        \frametitle{双曲函数积分表}
+        \begin{itemize}
+            \item $\int{\sinh{cx}}\mathrm{d}x=\frac{\cosh{cx}}{c}+C$
+            \item $\int{\cosh{cx}}\mathrm{d}x=\frac{\sinh{cx}}{c}+C$
+            \item $\int{\sinh^2{cx}}\mathrm{d}x=\frac{\sinh{2cx}}{4c}-\frac{x}{2}+C$
+            \item $\int{\cosh^2{cx}}\mathrm{d}x=\frac{\sinh{2cx}}{4c}+\frac{x}{2}+C$
+            \item $\int{\tanh{cx}}\mathrm{d}x=\frac{1}{c}\ln{|\cosh{cx}|}+C$
+            \item $\int{\coth{cx}}\mathrm{d}x=\frac{1}{c}\ln{|\sinh{cx}|}+C$
+        \end{itemize}
+    \end{frame}
+    \section{积分法}
+    \subsection{第一换元法}
+    \begin{frame}
+        \frametitle{第一换元法}
+        设函数$F(u)$是$f(u)$在区间$I$上的一个原函数，即$\int{f(u)}\mathrm{d}u=F(u)+C$，又$u=\phi(x)$在区间$I$上可导且其值域$R(\phi)\subset I$，则有：$$\int{f[\phi(x)]\phi'(x)}\mathrm{d}x=F[\phi(x)]+C$$.
+    \end{frame}
+    \subsection{第二换元法}
+    \begin{frame}
+        \frametitle{第二换元法}
+        就是把第一换元法倒过来用.
+    \end{frame}
+    \subsection{分部积分法}
+    \begin{frame}
+        \frametitle{分部积分法}
+        根据求导法则，有：$$\int{u(x)v'(x)}\mathrm{d}x=u(x)v(x)-\int{u'(x)v(x)}\mathrm{d}x$$.
+    \end{frame}
+    \subsection{三角代换法}
+    \begin{frame}
+        \frametitle{三角换元法}
+        无理式$\sqrt{x^2+a^2}$，$\sqrt{x^2-a^2}$，$\sqrt{a^2-x^2}$，分别采用$x=a\tan{t}$，$x=a\sec{t}$，$x=a\sin{t}$代换.
+    \end{frame}
+\end{document}
